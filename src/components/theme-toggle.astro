@@ -38,7 +38,8 @@
   const themeToggle = document.getElementById('theme-toggle');
 
   themeToggle?.addEventListener('click', () => {
-    const currentTheme = document.documentElement.getAttribute('data-theme') || 'default-dark';
+    const currentTheme = document.documentElement.getAttribute('data-theme');
+    if (!currentTheme) return;
     
     const isDark = currentTheme.endsWith('-dark');
     

@@ -24,7 +24,7 @@ const defaultTheme = `${baseTheme}-light`;
     <script is:inline define:vars={{ baseTheme, defaultTheme }}>
       const savedTheme = localStorage.getItem('theme');
 
-      if (savedTheme && savedTheme.startsWith(baseTheme)) {
+      if (savedTheme && savedTheme.startsWith(baseTheme) && (savedTheme.endsWith('-light') || savedTheme.endsWith('-dark'))) {
         document.documentElement.setAttribute('data-theme', savedTheme);
       } else {
         document.documentElement.setAttribute('data-theme', defaultTheme);

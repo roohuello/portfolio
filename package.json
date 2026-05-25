@@ -1,7 +1,7 @@
 {
-  "name": "career-portfolio",
+  "name": "portfolio",
   "type": "module",
-  "version": "0.1.6",
+  "version": "0.1",
   "scripts": {
     "dev": "astro dev --host",
     "build": "astro build",
